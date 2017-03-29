@@ -14,8 +14,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test-watch": "react-scripts test --env=jsdom",
-    "test-watch-all": "react-scripts test a --env=jsdom",
+    "test-all": "react-scripts test a --env=jsdom",
     "lint": "./node_modules/standard/bin/cmd.js",
     "lint-fix": "./node_modules/standard/bin/cmd.js --fix"
   },
