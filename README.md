@@ -13,7 +13,7 @@ Setup your machine accordingly
 1. run `yarn` to install all packages
 
 ## Testing
-1. Run `yarn test-all` to run the test suite interactively.
+1. Run `yarn test:watchall` to run the test suite interactively.
 1. While the test suite is running, all files named `*.test.js` recursively inside the `./src/` directory are executed on each change made to a file.
 1. If everything went right, you should see something like this:
   ```
@@ -34,3 +34,9 @@ Watch Usage
  › Press Enter to trigger a test run.
 
   ```
+
+## Available commands
+- `yarn test` - Runns all tests and quits
+- `yarn test:coverage` - Runns all tests and generates a coverage report
+- `yarn test:watch` - Watch files for changes and rerun tests related to changed files.
+- `yarn test:watchall` - Same as watch, but reruns all tests when a file has changed.
