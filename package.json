@@ -13,8 +13,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "test-all": "react-scripts test a --env=jsdom",
+    "test": "CI=1 react-scripts test --env=jsdom",
+    "test-changes": "react-scripts test --env=jsdom",
+    "test-all": "CI=1 react-scripts test --watchAll --env=jsdom",
     "lint": "./node_modules/standard/bin/cmd.js",
     "lint-fix": "./node_modules/standard/bin/cmd.js --fix"
   },
