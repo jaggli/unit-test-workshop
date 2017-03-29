@@ -1,0 +1,27 @@
+{
+  "name": "unit-test-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "standard": "^9.0.2"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "test-watch": "react-scripts test --env=jsdom",
+    "test-watch-all": "react-scripts test a --env=jsdom",
+    "lint": "./node_modules/standard/bin/cmd.js",
+    "lint-fix": "./node_modules/standard/bin/cmd.js --fix"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}
