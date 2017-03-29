@@ -17,20 +17,20 @@ Setup your machine accordingly
 1. While the test suite is running, all files named `*.test.js` recursively inside the `./src/` directory are executed on each change made to a file.
 1. If everything went right, you should see something like this:
   ```
-  PASS  src/hiker.test.js
-    answer
-      ✓ to life the universe and everything (2ms)
+ PASS  src/hiker.test.js
+  answer
+    ✓ to life the universe and everything (3ms)
 
-  Test Suites: 1 passed, 1 total
-  Tests:       1 passed, 1 total
-  Snapshots:   0 total
-  Time:        0.07s
-  Ran all test suites matching "a".
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.946s
+Ran all test suites.
 
-  Watch Usage
-  › Press a to run all tests.
-  › Press o to only run tests related to changed files.
-  › Press p to filter by a filename regex pattern.
-  › Press q to quit watch mode.
-  › Press Enter to trigger a test run.
+Watch Usage
+ › Press o to only run tests related to changed files.
+ › Press p to filter by a filename regex pattern.
+ › Press q to quit watch mode.
+ › Press Enter to trigger a test run.
+
   ```
