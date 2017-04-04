@@ -1,6 +1,6 @@
 ## TDD micro cycle
 
-![cycle](./tdd.gif)
+![cycle](./img/tdd.gif)
 
 - Write failing tests first, make as little code as possible to pass the test, refactor.
 - The test code is usually double the size of the actual code, being tested
