@@ -40,3 +40,8 @@ Watch Usage
 - `yarn test:coverage` - Runns all tests and generates a coverage report
 - `yarn test:watch` - Watch files for changes and rerun tests related to changed files.
 - `yarn test:watchall` - Same as watch, but reruns all tests when a file has changed.
+
+## Workshop notes
+- [TDD](./takeaways/tdd.md)
+- [pair programming](./takeaways/pair-programming.md)
+- [refactoring](./takeaways/refactoring.md)
