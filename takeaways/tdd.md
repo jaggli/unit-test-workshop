@@ -12,3 +12,6 @@
   - no defined order to run
   - no dependencies on each other
 - Don't test the libraries (they need therir own tests)
+- You're not allowed to write any production code, that's not helping to pass some unit test
+- Don't write more than to pass the unit tests
+- Don't do what you need in future, code for now
