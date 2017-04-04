@@ -35,4 +35,4 @@
 ```
 - Testing code (methods, classes) = **Unit tests**
 - Testing something with dependencies (e.g. GUI, DB) = **Functional testing**
-- 
+- Integration and user testing is not done by developers
