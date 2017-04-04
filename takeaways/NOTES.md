@@ -11,3 +11,4 @@
   - no side effects
   - no defined order to run
   - no dependencies on each other
+- Don't test the libraries (they need therir own tests)
