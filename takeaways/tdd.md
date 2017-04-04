@@ -12,4 +12,6 @@
   - no defined order to run
   - no dependencies on each other
 - Don't test the libraries (they need therir own tests)
-- Don't write any code, that is not helping to pass at least one test
+- You're not allowed to write any production code, that's not helping to pass some unit test
+- Don't write more than to pass the unit tests
+- Don't do what you need in future, code for now
