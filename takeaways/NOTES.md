@@ -1,5 +1,7 @@
 ## TDD micro cycle
 
+![cycle](./cycle.png)
+
 - Write failing tests first, make as little code as possible to pass the test, refactor.
 - The test code is usually double the size of the actual code, being tested
 - Keep the coverage at 100%. 
