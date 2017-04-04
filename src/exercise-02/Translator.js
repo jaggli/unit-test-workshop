@@ -1,32 +1,33 @@
 const illegalCharacter = /[^IVXLCDM]/gi
 const illegalRepetitions = /I{4}|V{4}|X{4}|L{4}|C{4}|D{4}/
 
-const walk = (dict, str) => {
-  if (!str) { return 0 }
-  let total = 0
+const unifiedWalk = (dict, subject, ret, exitCheck, value, slice) => {
+  if (!subject) { return ret }
   let found = false
   dict.forEach(entry => {
-    if (found || str.indexOf(entry.symbol) !== 0) { return }
+    if (found || exitCheck(subject, entry)) { return }
     found = true
-    total += entry.value + walk(dict, str.slice(entry.symbol.length))
+    ret += value(entry) + unifiedWalk(
+      dict, slice(subject, entry),
+      ret, exitCheck, value, slice
+    )
   })
-  if (total > 4000) {
-    throw new Error('OutOfBounds')
-  }
-  return total
+  return ret
 }
 
-const moonwalk = (dict, num) => {
-  if (!num) { return '' }
-  let total = ''
-  let found = false
-  dict.forEach(entry => {
-    if (found || num < entry.value) { return }
-    found = true
-    total += entry.symbol + moonwalk(dict, num - entry.value)
-  })
-  return total
-}
+const walk = (dict, str) => unifiedWalk(
+  dict, str, 0,
+  (subject, entry) => subject.indexOf(entry.symbol) !== 0,
+  entry => entry.value,
+  (subject, entry) => subject.slice(entry.symbol.length)
+)
+
+const moonwalk = (dict, num) => unifiedWalk(
+  dict, num, '',
+  (subject, entry) => subject < entry.value,
+  entry => entry.symbol,
+  (subject, entry) => subject - entry.value
+)
 
 class Translator {
   constructor (dict) { this.dict = dict }
@@ -36,7 +37,11 @@ class Translator {
       illegalCharacter.test(str) ||
       illegalRepetitions.test(str)
     ) { throw new Error('ParseError') }
-    return walk(this.dict, str)
+    const parsed = walk(this.dict, str)
+    if (parsed > 4000) {
+      throw new Error('OutOfBounds')
+    }
+    return parsed
   }
   toString (num) {
     return moonwalk(this.dict, num)
