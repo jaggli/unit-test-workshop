@@ -15,3 +15,24 @@
 - You're not allowed to write any production code, that's not helping to pass some unit test
 - Don't write more than to pass the unit tests
 - Don't do what you need in future, code for now
+
+### The cost of testing
+- Total coverage of end to end testing is not possible, because it's to expensive
+- Distribution of unit tests, functional testing, integration tests and user acceptance tests should align as a pyramid
+- Unit tests are **cheap and fast**
+- Manual user tests are **expensive and slow**
+```
+                   /  \
+                 /      \
+               /   usert  \
+             /--------------\
+           /   integration    \
+         /----------------------\
+       /    Functional testing    \
+     /------------------------------\
+   /           Unit Testing           \
+ /______________________________________\
+```
+- Testing code (methods, classes) = **Unit tests**
+- Testing something with dependencies (e.g. GUI, DB) = **Functional testing**
+- 
