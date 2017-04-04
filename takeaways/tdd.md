@@ -12,3 +12,4 @@
   - no defined order to run
   - no dependencies on each other
 - Don't test the libraries (they need therir own tests)
+- Don't write any code, that is not helping to pass at least one test
