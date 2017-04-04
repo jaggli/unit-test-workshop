@@ -23,15 +23,15 @@
 - Manual user tests are **expensive and slow**
 ```
                    /  \
-                 /      \
-               /   usert  \
-             /--------------\
-           /   integration    \
-         /----------------------\
-       /    Functional testing    \
-     /------------------------------\
-   /           Unit Testing           \
- /______________________________________\
+                 /      \   -   -   -   -   -   -   -
+               /   usert  \                           Expensive and very slow
+             /--------------\   -   -   -   -   -   -
+           /   integration    \                       Moderate priced and slow
+         /----------------------\   -   -   -   -   - 
+       /    Functional testing    \                   Pretty cheap and fast
+     /------------------------------\   -   -   -   -  
+   /           Unit Testing           \               Very cheap and very fast
+ /______________________________________\   -   -   -
 ```
 - Testing code (methods, classes) = **Unit tests**
 - Testing something with dependencies (e.g. GUI, DB) = **Functional testing**
