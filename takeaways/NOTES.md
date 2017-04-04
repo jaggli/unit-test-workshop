@@ -1,6 +1,6 @@
 ## TDD micro cycle
 
-![cycle](./cycle.png)
+![cycle](./tdd.gif)
 
 - Write failing tests first, make as little code as possible to pass the test, refactor.
 - The test code is usually double the size of the actual code, being tested
@@ -12,3 +12,7 @@
   - no defined order to run
   - no dependencies on each other
 - Don't test the libraries (they need therir own tests)
+
+## Pair programming
+
+- tbd
