@@ -2,6 +2,8 @@
 
 ![cycle](./tdd.gif)
 
+[Exercise 01](/src/exercise-01/)
+
 - Write failing tests first, make as little code as possible to pass the test, refactor.
 - The test code is usually double the size of the actual code, being tested
 - Keep the coverage at 100%. 
@@ -39,6 +41,8 @@
 
 ## Pair programming
 
+[Exercise 02](/src/exercise-02/)
+
 - Two devs code on the same machine.
   - One is typing (driver)
   - One is reviewing each line of code (navigator)
@@ -60,5 +64,8 @@
 
 ## Write testable code
 
+[Exercise 03](/src/exercise-03/)
+
 ### Dependency injection and dependency reversion
-If your code depends on non-controllable objects (like Date, setInterval...)
+- If your code depends on non-controllable objects (like Date, setInterval...) we have to mock/overload it
+- The idea is to pass references in the constructor and use the system functions by default, if they're not specified
