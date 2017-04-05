@@ -58,3 +58,7 @@
 ### Duplicated code
 - Doing the same thing slightly different and copy the code, this is duplicated code
 
+## Write testable code
+
+### Dependency injection and dependency reversion
+If your code depends on non-controllable objects (like Date, setInterval...)
