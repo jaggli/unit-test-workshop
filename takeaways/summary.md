@@ -36,3 +36,25 @@
 - Testing code (methods, classes) = **Unit tests**
 - Testing something with dependencies (e.g. GUI, DB) = **Functional testing**
 - Integration and user testing is not done by developers
+
+## Pair programming
+
+- Two devs code on the same machine.
+  - One is typing (driver)
+  - One is reviewing each line of code (navigator)
+  - Frequent role switching (<30min)
+- Teacher/Student is not a good pair (nor are Puppet/Master, Worker/Sleeper and two hero competitors)
+
+## Refactoring and code Smells
+- The code works but has flaws (smells) so we have to refactor it
+- List of [JS smells](http://elijahmanor.com/javascript-smells/)
+
+### Comments
+- If you need a **comment** to explain your code, it's a smell
+- Good code is self explanatory
+- Generator comments are ok
+- Use functions instead of comments, even if they're only used once, locally
+
+### Duplicated code
+- Doing the same thing slightly different and copy the code, this is duplicated code
+
