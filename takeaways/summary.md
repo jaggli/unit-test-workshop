@@ -82,3 +82,16 @@
     }
   }
   ```
+
+## S.O.L.I.D.
+- The most important thing in SOLID are the [KISS](https://en.wikipedia.org/wiki/KISS_principle) and the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principles
+  - Expert developers write simple code that does great things
+- An other important one is also [YANGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+  - You are not gonna need it
+  - Never think about the future
+  - Design for now, now matters
+- SOLID means
+  - **S**ingle responsible principle
+    - just because you can, doesn't mean you should
+    - every class should have a single responibility
+  - **O**pen Closed principle
