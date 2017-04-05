@@ -1,6 +1,9 @@
 # unit-test-workshop
 
-This is a boilerplate project for frontend unit testing
+This is a working repo from the unit test workshop
+
+## Check out the summary
+- [takeaways](./takeaways/summary.md)
 
 ## Prerequisites
 Setup your machine accordingly
@@ -40,3 +43,4 @@ Watch Usage
 - `yarn test:coverage` - Runns all tests and generates a coverage report
 - `yarn test:watch` - Watch files for changes and rerun tests related to changed files.
 - `yarn test:watchall` - Same as watch, but reruns all tests when a file has changed.
+
