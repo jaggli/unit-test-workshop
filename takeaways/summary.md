@@ -46,6 +46,7 @@ Inserted a few interpretations, of what we learned.
 - Testing code (methods, classes) = **Unit tests**
 - Testing something with dependencies (e.g. GUI, DB) = **Functional testing**
 - Integration and user testing is not done by developers
+- **The real cost of software is mainainance, not the initial design**
 
 ## Pair programming
 
