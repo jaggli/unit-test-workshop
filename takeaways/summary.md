@@ -12,10 +12,12 @@ Inserted a few interpretations, of what we learned.
 - Keep the coverage at 100%. 
 - Each code file needs a test file
 - Use the most precise assert method available (not always test for true or false)
-- Unit tests are isolated 
+- Unit tests are isolated and fast
   - no side effects
   - no defined order to run
   - no dependencies on each other
+  - no dependencies of system objects
+  - no use of timeouts or timers
 - Don't test the libraries (they need therir own tests)
 - You're not allowed to write any production code, that's not helping to pass some unit test
 - Don't write more than to pass the unit tests
@@ -118,4 +120,13 @@ Inserted a few interpretations, of what we learned.
     - If you depend on System objects, make them mockable, to make your code testable
     - Look at the depencency injection example above
 
-## todo
+## Continous integration
+- Sequenced steps required in a CI workflow
+  1. Build
+  1. Unit testing
+  1. Deploy
+  1. Smoke testing
+  1. Functional testing
+- Don't go to the next step, if one fails
+- This makes sure to **detect a bug as soon as possible**
+- 
