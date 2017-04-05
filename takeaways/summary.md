@@ -132,4 +132,9 @@ Inserted a few interpretations, of what we learned.
   1. Functional testing
 - Don't go to the next step, if one fails
 - This makes sure to **detect a bug as soon as possible**
-- 
+
+## Working with legacy code
+Downloaded code from [Emily Bache](https://github.com/emilybache/Tennis-Refactoring-Kata/tree/master/javascript)
+
+[Exercise 05](/src/exercise-05/)
+
