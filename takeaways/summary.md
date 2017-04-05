@@ -88,7 +88,6 @@
   - Expert developers write simple code that does great things
 - An other important one is also [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
   - You aren't gonna need it
-  - Never think about the future
   - Design for now, now matters
 - SOLID means
   - **S**ingle responsible principle
