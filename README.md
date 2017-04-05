@@ -2,10 +2,8 @@
 
 This is a working repo from the unit test workshop
 
-## Workshop notes and takeaways
-- [TDD](./takeaways/tdd.md)
-- [pair programming](./takeaways/pair-programming.md)
-- [refactoring](./takeaways/refactoring.md)
+## Check out the summary
+- [takeaways](./takeaways/summary.md)
 
 ## Prerequisites
 Setup your machine accordingly
