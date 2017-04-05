@@ -66,7 +66,7 @@
 
 [Exercise 03](/src/exercise-03/)
 
-### Dependency injection and dependency reversion
+### Dependency injection
 - If your code depends on non-controllable objects (like Date, setInterval...) we have to mock/overload it
 - The idea is to pass references in the constructor and use the system functions by default, if they're not specified
   ```js
