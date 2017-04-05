@@ -31,16 +31,15 @@ Inserted a few interpretations, of what we learned.
 - Unit tests are **cheap and fast**
 - Manual user tests are **expensive and slow**
 ```
-                   /  \
-                 /      \   -   -   -   -   -   -   -
-               /   usert  \                           Expensive and very slow
-             /--------------\   -   -   -   -   -   -
-           /   integration    \                       Moderate priced and slow
-         /----------------------\   -   -   -   -   - 
-       /    Functional testing    \                   Pretty cheap and fast
-     /------------------------------\   -   -   -   -  
-   /           Unit Testing           \               Very cheap and very fast
- /______________________________________\   -   -   -
+                 /  \   -   -   -   -   -
+               / user \                   Expensive and very slow
+             /----------\   -   -   -   -
+           / integration  \               Moderate priced and slow
+         /------------------\   -   -   - 
+       /      functional      \           Pretty cheap and fast
+     /--------------------------\   -   -  
+   /             unit             \       Very cheap and very fast
+ /----------------------------------\   -
 ```
 - Testing code (methods, classes) = **Unit tests**
 - Testing something with dependencies (e.g. GUI, DB) = **Functional testing**
@@ -69,12 +68,15 @@ Inserted a few interpretations, of what we learned.
 
 ### Duplicated code
 - Doing the same thing slightly different and copy the code, this is duplicated code
+- Redundancy is dplicated code
+- Refactoring is a great way to get rid of duplicated code
+- You heavily depend on unit tests, to be sure not to break anything in order to get rid of duplicated code.
 
 ## Write testable code
 
 [Exercise 03](/src/exercise-03/)
 
-### Dependency injection
+### Dependency injection (depencency inversion)
 - If your code depends on non-controllable objects (like Date, setInterval...) we have to mock/overload it
 - The idea is to pass references in the constructor and use the system functions by default, if they're not specified
   ```js
@@ -88,7 +90,7 @@ Inserted a few interpretations, of what we learned.
   }
   ```
 
-## S.O.L.I.D.
+### S.O.L.I.D.
 - The most important thing in SOLID are the [KISS](https://en.wikipedia.org/wiki/KISS_principle) and the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principles
   - Expert developers write simple code that does great things
 - An other important one is also [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
@@ -104,4 +106,16 @@ Inserted a few interpretations, of what we learned.
       - *open* for extension
       - *closed* for modification -> private stays private
     - Use [composition instead of inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
-    - 
+    - **L**iskov Substitution Principle
+      - All derived classes must honour all public interfaces of the base class
+      - The base class is the *only place* to define the public interface
+    - **I**nterface Segregation Principle
+      - No client should be forced to depend on methods it doesn't use
+      - Only expose and pass methods that are actually needed
+      - Make sure you have only a single point to maintain, while implementing future changes
+    - **D**ependency inversion principle
+      - Make sure, all classes are testable
+      - If you depend on System objects, make them mockable, to make your code testable
+      - Look at the depencency injection example above
+
+## todo
