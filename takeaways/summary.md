@@ -144,3 +144,23 @@ Refactored the TennisClass1.js
 - we can refactor without fully understand the logic :rocket:
 
 ## Extreme programming
+
+![loops](./xtreme-loops.svg)
+
+### responsible circles
+- Inner circle
+  - pair programming
+  - test driven
+  - refactoring
+  - simple design
+- Middle circle
+  - continous integration
+  - coding standard
+  - sustainable pace
+  - metaphon
+  - collective ownership
+- Outer circle
+  - planning
+  - whole team
+  - small releases
+  - customer tests
