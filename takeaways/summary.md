@@ -1,4 +1,5 @@
 # Workshop takeaways summary
+And added some interpretations, of what we learned.
 
 ## TDD micro cycle
 
