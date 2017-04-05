@@ -93,6 +93,9 @@ Inserted a few interpretations, of what we learned.
   ```
 
 ### S.O.L.I.D.
+
+[Exercise 04](/src/exercise-04/)
+
 - The most important thing in SOLID are the [KISS](https://en.wikipedia.org/wiki/KISS_principle) and the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principles
   - Expert developers write simple code that does great things
 - An other important one is also [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
