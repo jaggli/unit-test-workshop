@@ -98,6 +98,6 @@
   - **O**pen Closed principle
     - Classes, modules and functions should be
       - *open* for extension
-      - *closed* for modification
+      - *closed* for modification -> private stays private
     - Use [composition instead of inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
-    
+    - 
