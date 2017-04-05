@@ -19,6 +19,7 @@
 - You're not allowed to write any production code, that's not helping to pass some unit test
 - Don't write more than to pass the unit tests
 - Don't do what you need in future, code for now
+- **Don't code in unit tests** Just write the least amount of testing code, repetitions are ok here. Remember: you're not producing anything directly valuable for the product, while you write code in tests, beside the tests itself.
 
 ### The cost of testing
 - Total coverage of end to end testing is not possible, because it's to expensive
