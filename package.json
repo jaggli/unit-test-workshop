@@ -18,7 +18,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "test:watchall": "CI=1 react-scripts test --watchAll --env=jsdom",
     "lint": "./node_modules/standard/bin/cmd.js",
-    "lint-fix": "./node_modules/standard/bin/cmd.js --fix"
+    "lint:fix": "./node_modules/standard/bin/cmd.js --fix"
   },
   "standard": {
     "env": {

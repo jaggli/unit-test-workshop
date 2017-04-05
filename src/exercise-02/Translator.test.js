@@ -77,7 +77,6 @@ describe('parse', () => {
   })
 })
 
-
 describe('parse', () => {
   it('to translate the number 1', () => {
     expect(translator.toString(1)).toEqual('I')

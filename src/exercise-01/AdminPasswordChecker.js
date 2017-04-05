@@ -8,7 +8,7 @@ class AdminPasswordChecker extends PasswordChecker {
     return (
       super.check(pwd) &&
       pwd.length > 10 &&
-      hasSpecialChar.test(pwd) && 
+      hasSpecialChar.test(pwd) &&
       lastIsSpecialOrDigit.test(pwd)
     )
   }

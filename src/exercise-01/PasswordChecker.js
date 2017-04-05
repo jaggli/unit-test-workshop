@@ -7,7 +7,7 @@ class PasswordChecker {
       hasAlphanumeric.test(pwd) &&
       hasNumber.test(pwd)
     )
-  } 
+  }
 }
 
 export default PasswordChecker

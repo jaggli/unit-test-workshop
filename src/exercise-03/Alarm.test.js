@@ -31,5 +31,3 @@ describe('isExpired', () => {
     expect(clock.isExpired()).toEqual(true)
   })
 })
-
-
