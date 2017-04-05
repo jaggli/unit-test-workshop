@@ -26,6 +26,7 @@ Inserted a few interpretations, of what we learned.
   - Write the least amount of testing code possible
   - Repetitions are ok here. 
   - You're not producing anything directly valuable for the product, while you write code in tests, beside the tests itself.
+- Code with performance best practices in mind, but without heavy performance optimization until you detect a bottle neck and fix it, where it's broken.
 
 ### The cost of testing
 - Total coverage of end to end testing is not possible, because it's to expensive
