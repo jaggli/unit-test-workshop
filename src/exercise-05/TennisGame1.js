@@ -1,62 +1,51 @@
-var TennisGame1 = function (player1Name, player2Name) {
-  this.m_score1 = 0
-  this.m_score2 = 0
-  this.player1Name = player1Name
-  this.player2Name = player2Name
+const dicts = {
+  equal: {
+    '0': 'Love-All',
+    '1': 'Fifteen-All',
+    '2': 'Thirty-All',
+    '3': 'Deuce'
+  },
+  delta: {
+    '-2': 'Win for player2',
+    '-1': 'Advantage player2',
+    '1': 'Advantage player1',
+    '2': 'Win for player1'
+  },
+  score: {
+    '0': 'Love',
+    '1': 'Fifteen',
+    '2': 'Thirty',
+    '3': 'Forty'
+  }
 }
 
-TennisGame1.prototype.wonPoint = function (playerName) {
-  if (playerName === 'player1') { this.m_score1 += 1 } else { this.m_score2 += 1 }
-} // aight
+class TennisGame1 {
+  constructor (player1Name, player2Name) {
+    this.player1Score = 0
+    this.player2Score = 0
+    this.player1Name = player1Name
+    this.player2Name = player2Name
+  }
 
-TennisGame1.prototype.getScore = function () {
-  var score = ''
-  var tempScore = 0
-  if (this.m_score1 === this.m_score2) {
-    switch (this.m_score1) {
-      case 0:
-        score = 'Love-All'
-        break
-      case 1:
-        score = 'Fifteen-All'
-        break
-      case 2:
-        score = 'Thirty-All'
-        break
-      default:
-        score = 'Deuce'
-        break
-    }
-  } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
-    var minusResult = this.m_score1 - this.m_score2
-    if (minusResult === 1) score = 'Advantage player1'
-    else if (minusResult === -1) score = 'Advantage player2'
-    else if (minusResult >= 2) score = 'Win for player1'
-    else score = 'Win for player2'
-  } else {
-    for (var i = 1; i < 3; i++) {
-      if (i === 1) tempScore = this.m_score1
-      else {
-        score += '-'
-        tempScore = this.m_score2
-      }
-      switch (tempScore) {
-        case 0:
-          score += 'Love'
-          break
-        case 1:
-          score += 'Fifteen'
-          break
-        case 2:
-          score += 'Thirty'
-          break
-        case 3:
-          score += 'Forty'
-          break
-      }
+  wonPoint (playerName) {
+    if (playerName === this.player1Name) {
+      this.player1Score += 1
+    } else {
+      this.player2Score += 1
     }
   }
-  return score
+
+  getScore () {
+    const delta = Math.min(2, Math.max(-2, this.player1Score - this.player2Score))
+    if (delta === 0) {
+      var maxScore = Math.min(this.player1Score, 3)
+      return dicts.equal[maxScore]
+    }
+    if (this.player1Score >= 4 || this.player2Score >= 4) {
+      return dicts.delta[delta]
+    }
+    return dicts.score[this.player1Score] + '-' + dicts.score[this.player2Score]
+  }
 }
 
 if (typeof window === 'undefined') {
