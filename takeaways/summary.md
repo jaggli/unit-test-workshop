@@ -145,7 +145,7 @@ Refactored the TennisClass1.js
 
 ## Extreme programming
 
-![loops](./xtreme-loops.svg)
+![loops](./xtreme-loops.png)
 
 ### responsible circles
 - Inner circle
