@@ -106,16 +106,16 @@ Inserted a few interpretations, of what we learned.
       - *open* for extension
       - *closed* for modification -> private stays private
     - Use [composition instead of inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
-    - **L**iskov Substitution Principle
-      - All derived classes must honour all public interfaces of the base class
-      - The base class is the *only place* to define the public interface
-    - **I**nterface Segregation Principle
-      - No client should be forced to depend on methods it doesn't use
-      - Only expose and pass methods that are actually needed
-      - Make sure you have only a single point to maintain, while implementing future changes
-    - **D**ependency inversion principle
-      - Make sure, all classes are testable
-      - If you depend on System objects, make them mockable, to make your code testable
-      - Look at the depencency injection example above
+  - **L**iskov Substitution Principle
+    - All derived classes must honour all public interfaces of the base class
+    - The base class is the *only place* to define the public interface
+  - **I**nterface Segregation Principle
+    - No client should be forced to depend on methods it doesn't use
+    - Only expose and pass methods that are actually needed
+    - Make sure you have only a single point to maintain, while implementing future changes
+  - **D**ependency inversion principle
+    - Make sure, all classes are testable
+    - If you depend on System objects, make them mockable, to make your code testable
+    - Look at the depencency injection example above
 
 ## todo
