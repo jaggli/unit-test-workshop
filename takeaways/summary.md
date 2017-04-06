@@ -141,7 +141,7 @@ Downloaded code from [Emily Bache](https://github.com/emilybache/Tennis-Refactor
 [Exercise 05](/src/exercise-05/)
 
 Refactored the TennisClass1.js
-- use automatically testing on each safe: `nodemon -w . TennisTest.js` in the `/src/exercise-05` directory
+- use automatically testing on each save: `nodemon -w . TennisTest.js` in the `/src/exercise-05` directory
 - only do baby-steps
 - we can refactor without fully understand the logic :rocket:
 
