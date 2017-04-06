@@ -1,6 +1,6 @@
 # unit-test-workshop
 
-This is a working repo from the unit test workshop
+This is a working repo of the unit test workshop
 
 ## Check out the summary
 - [takeaways](./takeaways/summary.md)
